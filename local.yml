@@ -1,5 +1,7 @@
 - name: configure httpd service
   hosts: all
+  remote_user: devops
+  become: yes
   tasks:
   - name: Install httpd service
     yum:
